@@ -133,23 +133,19 @@ header{
   border-bottom:1px solid var(--line);
 }
 .nav{display:flex;align-items:center;justify-content:space-between;height:86px;gap:24px}
-.brand img{width:280px;height:auto}
-.nav-links{display:flex;gap:26px;align-items:center}
-.nav-links a{font-size:14.5px;color:var(--ink-soft);font-weight:500;transition:color .18s}
+.brand img{width:240px;height:auto}
+.nav-links{display:flex;gap:20px;align-items:center}
+.nav-links a{font-size:13.5px;color:var(--ink-soft);font-weight:500;transition:color .18s;white-space:nowrap}
 .nav-links a:hover{color:var(--sage-deep)}
-.nav-right{display:flex;align-items:center;gap:14px}
-.nav-phone{
-  font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:600;
-  color:var(--ink);display:flex;align-items:center;gap:7px;
-}
-.nav-phone .dot{width:7px;height:7px;border-radius:50%;background:var(--sage);box-shadow:0 0 0 4px rgba(124,148,115,.2)}
+.nav-links a.active{color:var(--sage-deep);font-weight:600}
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-right .btn{padding:11px 20px;font-size:14px}
 .hamb{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
 .hamb span{width:24px;height:2px;background:var(--ink);border-radius:2px;transition:.3s}
 
-@media(max-width:1080px){
-  .brand img{width:230px}
+@media(max-width:1180px){
+  .brand img{width:220px}
   .nav-links{display:none}
-  .nav-phone{display:none}
   .hamb{display:flex}
   .nav-right .btn-outline{display:none}
 }
@@ -223,32 +219,35 @@ section{position:relative}
       <img src="images/elevation-health-logo.png" alt="Elevation Health">
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <a href="#how">How It Works</a>
+      <a href="/how-it-works">How It Works</a>
       <a href="/quiz">GLP-1 Quiz</a>
       <a href="/offer">90-Day Program</a>
       <a href="/peptides">Peptides</a>
+      <a href="/resources">Resources</a>
       <a href="/blog">Blog</a>
       <a href="/faq">FAQ</a>
       <a href="/about">About</a>
     </nav>
     <div class="nav-right">
-      <a class="nav-phone" href="tel:9832091760"><span class="dot"></span>983-209-1760</a>
-      <a class="btn btn-outline" href="/offer">Get Started</a>
+      <a class="btn btn-outline" href="https://shop.elevationhealth.co" target="_blank" rel="noopener">Shop Peptides</a>
+      <a class="btn btn-primary" href="/book">Book</a>
       <button class="hamb" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
 <div class="mobile-menu" id="mm">
-  <a href="#how" onclick="toggleMenu()">How It Works</a>
+  <a href="/how-it-works" onclick="toggleMenu()">How It Works</a>
   <a href="/quiz" onclick="toggleMenu()">GLP-1 Quiz</a>
   <a href="/offer" onclick="toggleMenu()">90-Day Program</a>
   <a href="/peptides" onclick="toggleMenu()">Peptides</a>
+  <a href="/resources" onclick="toggleMenu()">Resources</a>
   <a href="/blog" onclick="toggleMenu()">Blog</a>
   <a href="/faq" onclick="toggleMenu()">FAQ</a>
   <a href="/about" onclick="toggleMenu()">About</a>
-  <a class="mm-phone" href="tel:9832091760">Call 983-209-1760</a>
-  <a class="btn btn-clay" href="/offer" style="margin-top:18px;justify-content:center" onclick="toggleMenu()">Start the 90-Day Program</a>
+  <a class="btn btn-outline" href="https://shop.elevationhealth.co" target="_blank" rel="noopener" style="margin-top:22px;justify-content:center" onclick="toggleMenu()">Shop Peptides</a>
+  <a class="btn btn-primary" href="/book" style="margin-top:10px;justify-content:center" onclick="toggleMenu()">Book a free call</a>
+  <a class="mm-phone" href="tel:9832091760" style="text-align:center;margin-top:16px">Or call 983-209-1760</a>
 </div>
 
 <!-- ============ HERO ============ -->
@@ -324,7 +323,7 @@ section{position:relative}
       <p>You&rsquo;ve tried the diets. You&rsquo;ve tried the willpower. You&rsquo;ve tried the programs that shipped a box and then went quiet. So here&rsquo;s the truth: it was never a discipline problem. It was a support problem.</p>
       <p>GLP-1 medication does one job, and it does it well &mdash; it quiets the food noise and resets your appetite. But medication alone leaves the rest on the table. That&rsquo;s where we come in.</p>
       <p>Our GLP-1 360 Plan handles everything the vial can&rsquo;t: your nutrition, your protein, your muscle, your side effects, and a real dietitian to call when week three gets hard. Because the medication starts the change. The support makes it last.</p>
-      <a class="thesis-link" href="#how">See how the program works &rarr;</a>
+      <a class="thesis-link" href="/how-it-works">See how the program works &rarr;</a>
     </div>
   </div>
 </section>
@@ -1103,10 +1102,11 @@ section{position:relative}
     </div>
     <div class="foot-col">
       <h4>Explore</h4>
-      <a href="#how">How It Works</a>
+      <a href="/how-it-works">How It Works</a>
       <a href="/quiz">GLP-1 Quiz</a>
       <a href="/offer">90-Day Program</a>
       <a href="/peptides">Peptides</a>
+      <a href="/resources">Resources</a>
       <a href="/blog">Blog</a>
     </div>
     <div class="foot-col">
