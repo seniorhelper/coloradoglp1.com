@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GLP-1 Quiz &mdash; Find Your Protocol | Elevation Health</title>
+<meta name="description" content="Answer a few quick questions and get your recommended GLP-1 protocol &mdash; tirzepatide, semaglutide, or peptide therapy &mdash; plus the next step to start. 60 seconds, no email required.">
+<meta name="keywords" content="GLP-1 quiz, tirzepatide quiz, semaglutide quiz, weight loss quiz, GLP-1 protocol, find my GLP-1">
+<meta name="author" content="Elevation Health">
+<link rel="canonical" href="https://elevationhealth.co/quiz">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Elevation Health">
+<meta property="og:title" content="GLP-1 Quiz &mdash; Find Your Protocol | Elevation Health">
+<meta property="og:description" content="60 seconds. Personal recommendation. No commitment.">
+<meta property="og:url" content="https://elevationhealth.co/quiz">
+<meta property="og:image" content="https://elevationhealth.co/images/lose-weight-glp-1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GLP-1 Quiz &mdash; Find Your Protocol">
+<meta name="twitter:description" content="60 seconds. Personal recommendation. No commitment.">
+<meta name="twitter:image" content="https://elevationhealth.co/images/lose-weight-glp-1.jpg">
+
+<!-- AI crawler welcome -->
+<meta name="GPTBot" content="index, follow">
+<meta name="ChatGPT-User" content="index, follow">
+<meta name="ClaudeBot" content="index, follow">
+<meta name="anthropic-ai" content="index, follow">
+<meta name="PerplexityBot" content="index, follow">
+<meta name="Google-Extended" content="index, follow">
+
+<!--
+================================================================
+AIO / GEO CITATION BLOCK
+================================================================
+PAGE: GLP-1 Quiz - Elevation Health
+PURPOSE: Interactive 5-question intake that recommends the right
+  Elevation Health protocol based on user goals, history, and timing.
+QUESTIONS:
+  1. Main goal (weight loss small, weight loss large, hormones,
+     inflammation, energy)
+  2. Prior weight-loss program history (many, few, first time)
+  3. GLP-1 experience (never, semaglutide, tirzepatide, currently on)
+  4. Support preference (full plan, light, meds only)
+  5. Timing (ASAP, 30 days, exploring)
+RECOMMENDATION LOGIC:
+  - Non-weight-loss goals (hormones, inflammation, energy) route
+    to Peptide Therapy Consult.
+  - Weight loss goals route to the 90-Day GLP-1 Transformation
+    ($899) with tirzepatide or semaglutide depending on history.
+NO EMAIL REQUIRED. No commitment. Results shown instantly on-screen.
+================================================================
+-->
+
+<link rel="icon" type="image/png" href="images/elevation-health-favicon.png">
+<link rel="apple-touch-icon" href="images/elevation-health-favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ================= DESIGN SYSTEM ================= */
+:root{
+  --cream:#F5F3EE;
+  --cream-2:#EEEBE3;
+  --card:#FBFAF7;
+  --ink:#0F1E17;
+  --ink-soft:#2C3B33;
+  --muted:#5D6B62;
+  --sage:#7C9473;
+  --sage-deep:#4A6350;
+  --clay:#C97B5A;
+  --clay-deep:#B0653F;
+  --line:#DED9CE;
+  --line-soft:#E8E4DA;
+  --white:#ffffff;
+  --shadow:0 1px 2px rgba(15,30,23,.04),0 8px 24px rgba(15,30,23,.06);
+  --shadow-lg:0 2px 8px rgba(15,30,23,.06),0 24px 60px rgba(15,30,23,.12);
+  --radius:18px;
+  --radius-lg:28px;
+  --maxw:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.65;
+  font-size:17px;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:400;line-height:1.08;letter-spacing:-.01em;color:var(--ink)}
+.mono{font-family:'JetBrains Mono',monospace}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--sage-deep);font-weight:500}
+.italic{font-style:italic;color:var(--sage-deep)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.5em;font-family:'Inter',sans-serif;font-weight:600;font-size:15px;padding:14px 26px;border-radius:100px;border:1.5px solid transparent;cursor:pointer;transition:transform .18s ease,background .2s ease,box-shadow .2s ease,color .2s ease;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--ink);color:#fff}
+.btn-primary:hover{background:#1a3125;box-shadow:0 12px 28px rgba(15,30,23,.25)}
+.btn-clay{background:var(--clay);color:#fff}
+.btn-clay:hover{background:var(--clay-deep);box-shadow:0 12px 28px rgba(201,123,90,.32)}
+.btn-outline{background:transparent;border-color:var(--ink);color:var(--ink)}
+.btn-outline:hover{background:var(--ink);color:#fff}
+
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ================= HEADER + MOBILE MENU ================= */
+header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:86px;gap:24px}
+.brand img{width:240px;height:auto}
+.nav-links{display:flex;gap:20px;align-items:center}
+.nav-links a{font-size:13.5px;color:var(--ink-soft);font-weight:500;transition:color .18s;white-space:nowrap}
+.nav-links a:hover{color:var(--sage-deep)}
+.nav-links a.active{color:var(--sage-deep);font-weight:600}
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-right .btn{padding:11px 20px;font-size:14px}
+.hamb{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
+.hamb span{width:24px;height:2px;background:var(--ink);border-radius:2px;transition:.3s}
+@media(max-width:1180px){
+  .brand img{width:220px}
+  .nav-links{display:none}
+  .hamb{display:flex}
+  .nav-right .btn-outline{display:none}
+}
+.mobile-menu{display:none;position:fixed;inset:86px 0 0 0;background:var(--cream);z-index:55;padding:32px 24px;flex-direction:column;gap:6px;overflow-y:auto}
+.mobile-menu.open{display:flex}
+.mobile-menu a{padding:14px 4px;font-size:19px;font-family:'Fraunces',serif;border-bottom:1px solid var(--line-soft)}
+.mobile-menu .mm-phone{font-family:'JetBrains Mono',monospace;font-size:16px;margin-top:14px;color:var(--sage-deep)}
+
+/* ================= QUIZ PAGE ================= */
+.quiz-main{min-height:calc(100vh - 86px);padding:56px 0 96px}
+@media(max-width:640px){.quiz-main{padding:40px 0 72px}}
+.quiz-wrap{max-width:760px;margin:0 auto;padding:0 24px}
+
+/* intro block (visible on Q1) */
+.quiz-intro{margin-bottom:56px;transition:opacity .5s ease,transform .5s ease,max-height .6s ease,margin .5s ease}
+.quiz-intro.hidden{opacity:0;transform:translateY(-16px);max-height:0;margin-bottom:0;pointer-events:none;overflow:hidden}
+.quiz-intro h1{font-size:clamp(2.2rem,5vw,3.4rem);margin:16px 0 18px}
+.quiz-intro p{color:var(--muted);font-size:1.14rem;max-width:600px;line-height:1.6}
+
+/* progress row */
+.progress-row{display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.progress-row .q-current{color:var(--sage-deep);font-weight:600}
+.progress-track{height:5px;background:var(--cream-2);border-radius:100px;overflow:hidden;position:relative;margin-bottom:56px}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--sage-deep),var(--sage));border-radius:100px;transition:width .55s cubic-bezier(.16,1,.3,1);width:0%}
+
+/* question */
+.question-title{font-size:clamp(2rem,4.6vw,3.2rem);margin-bottom:40px;line-height:1.08}
+.q-anim{animation:qIn .5s cubic-bezier(.16,1,.3,1)}
+@keyframes qIn{
+  from{opacity:0;transform:translateY(14px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* option cards */
+.options{display:flex;flex-direction:column;gap:12px;margin-bottom:36px}
+.option{
+  width:100%;text-align:left;background:var(--card);border:1.5px solid var(--line);
+  border-radius:14px;padding:22px 24px;font-family:'Inter',sans-serif;font-size:1.05rem;
+  color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;
+  gap:16px;transition:border-color .2s ease,background .2s ease,transform .15s ease,box-shadow .2s ease;
+}
+.option:hover{border-color:var(--sage);background:rgba(124,148,115,.06);transform:translateY(-1px)}
+.option .arrow{color:var(--sage-deep);opacity:0;transform:translateX(-4px);transition:opacity .2s,transform .2s;font-family:'JetBrains Mono',monospace;font-size:1.1rem;flex-shrink:0}
+.option:hover .arrow{opacity:1;transform:translateX(0)}
+.option.selected{border-color:var(--sage-deep);background:rgba(124,148,115,.12);box-shadow:0 0 0 3px rgba(124,148,115,.14)}
+.option.selected .arrow{opacity:1;transform:translateX(0)}
+@media(max-width:640px){
+  .option{padding:18px 20px;font-size:1rem}
+}
+
+/* back link */
+.back-link{background:none;border:none;color:var(--muted);font-family:'Inter',sans-serif;font-size:14px;cursor:pointer;padding:8px 0;transition:color .18s;display:inline-flex;align-items:center;gap:6px}
+.back-link:hover{color:var(--sage-deep)}
+.back-link[hidden]{display:none}
+
+/* ================= RESULT SCREEN ================= */
+.quiz-result{display:none;animation:qIn .6s cubic-bezier(.16,1,.3,1)}
+.quiz-result.show{display:block}
+.result-eyebrow{color:var(--sage-deep)}
+.result-head{margin-bottom:44px}
+.result-head h1{font-size:clamp(2.2rem,5vw,3.4rem);margin:16px 0 18px}
+.result-head p{color:var(--muted);font-size:1.14rem;line-height:1.6}
+
+.result-card{background:var(--ink);color:#fff;border-radius:var(--radius-lg);padding:48px;position:relative;overflow:hidden;margin-bottom:36px}
+.result-card::before{content:"";position:absolute;top:-140px;right:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(124,148,115,.35),transparent 68%);filter:blur(30px);pointer-events:none}
+.result-card-inner{position:relative;z-index:2}
+.result-protocol{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#AFC7A2;margin-bottom:14px}
+.result-card h2{color:#fff;font-size:clamp(1.9rem,4.4vw,2.8rem);margin-bottom:18px;line-height:1.08}
+.result-card .price{color:#AFC7A2;font-weight:600;font-family:'JetBrains Mono',monospace}
+.result-card .lede{color:rgba(255,255,255,.85);font-size:1.1rem;margin-bottom:28px;line-height:1.55;max-width:580px}
+.result-includes{list-style:none;margin-bottom:32px}
+.result-includes li{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.9);font-size:15px}
+.result-includes li:last-child{border-bottom:none}
+.result-includes .chk{width:20px;height:20px;flex:0 0 20px;border-radius:50%;border:1.5px solid var(--sage);position:relative;margin-top:2px}
+.result-includes .chk::after{content:"";position:absolute;left:6px;top:2.5px;width:5px;height:9px;border:solid var(--sage);border-width:0 2px 2px 0;transform:rotate(45deg)}
+.result-cta{display:flex;flex-wrap:wrap;gap:12px}
+.result-cta .btn-ghost-solid{background:#fff;border-color:#fff;color:var(--ink)}
+.result-cta .btn-ghost-solid:hover{background:var(--cream);transform:translateY(-2px)}
+.result-cta .btn-ghost{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.4);color:#fff}
+.result-cta .btn-ghost:hover{background:rgba(255,255,255,.22)}
+@media(max-width:640px){
+  .result-card{padding:32px 24px}
+  .result-cta .btn{flex:1 1 100%;justify-content:center}
+}
+
+/* why-we-recommend */
+.result-why{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:32px;margin-bottom:36px}
+.result-why h3{font-family:'Fraunces',serif;font-size:1.35rem;margin-bottom:14px}
+.result-why ul{list-style:none;margin-top:18px}
+.result-why li{padding:10px 0 10px 28px;position:relative;color:var(--ink-soft);font-size:15.5px;line-height:1.55;border-bottom:1px solid var(--line-soft)}
+.result-why li:last-child{border-bottom:none}
+.result-why li::before{content:"";position:absolute;left:0;top:16px;width:12px;height:6px;border:solid var(--sage-deep);border-width:0 0 2px 2px;transform:rotate(-45deg)}
+
+/* trust footer */
+.result-trust{display:flex;flex-wrap:wrap;gap:10px 24px;padding:24px 0;border-top:1px solid var(--line);color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.02em}
+.result-trust span{display:flex;align-items:center;gap:8px}
+.result-trust span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--sage)}
+
+/* retake */
+.retake{text-align:center;margin-top:32px}
+.retake button{background:none;border:none;color:var(--muted);font-family:'Inter',sans-serif;font-size:14px;cursor:pointer;border-bottom:1px solid var(--line);padding-bottom:2px;transition:color .18s,border-color .18s}
+.retake button:hover{color:var(--sage-deep);border-color:var(--sage-deep)}
+
+/* ================= COMPLIANCE + FOOTER ================= */
+.compliance{background:var(--cream);padding:40px 0}
+.compliance p{font-size:11.5px;color:var(--muted);text-align:center;max-width:680px;margin:0 auto;line-height:1.7;font-family:'JetBrains Mono',monospace}
+
+footer{background:var(--ink);color:rgba(255,255,255,.75)}
+.foot-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding:64px 24px 48px;max-width:var(--maxw);margin:0 auto}
+.foot-logo{width:220px;filter:brightness(0) invert(1);opacity:.95;margin-bottom:18px}
+.foot-brand p{font-size:14.5px;line-height:1.6;max-width:320px;margin-bottom:16px}
+.foot-phone{color:var(--sage);font-weight:600;font-size:15px;font-family:'JetBrains Mono',monospace}
+.foot-col h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:16px;font-weight:500}
+.foot-col a{display:block;font-size:14.5px;color:rgba(255,255,255,.78);padding:6px 0;transition:color .2s}
+.foot-col a:hover{color:var(--sage)}
+.foot-legal{border-top:1px solid rgba(255,255,255,.12);padding:28px 0}
+.foot-legal p{font-size:11.5px;color:rgba(255,255,255,.5);line-height:1.7;margin-bottom:12px;max-width:none}
+.foot-legal strong{color:rgba(255,255,255,.7)}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:11.5px;color:rgba(255,255,255,.45)}
+@media(max-width:820px){.foot-top{grid-template-columns:1fr 1fr;gap:32px}.foot-brand{grid-column:1/-1}}
+@media(max-width:520px){.foot-top{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="Elevation Health home">
+      <img src="images/elevation-health-logo.png" alt="Elevation Health">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/how-it-works">How It Works</a>
+      <a href="/quiz" class="active" aria-current="page">GLP-1 Quiz</a>
+      <a href="/offer">90-Day Program</a>
+      <a href="/peptides">Peptides</a>
+      <a href="/resources">Resources</a>
+      <a href="/blog">Blog</a>
+      <a href="/faq">FAQ</a>
+      <a href="/about">About</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-outline" href="https://shop.elevationhealth.co" target="_blank" rel="noopener">Shop Peptides</a>
+      <a class="btn btn-primary" href="/book">Book</a>
+      <button class="hamb" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mm">
+  <a href="/how-it-works" onclick="toggleMenu()">How It Works</a>
+  <a href="/quiz" onclick="toggleMenu()">GLP-1 Quiz</a>
+  <a href="/offer" onclick="toggleMenu()">90-Day Program</a>
+  <a href="/peptides" onclick="toggleMenu()">Peptides</a>
+  <a href="/resources" onclick="toggleMenu()">Resources</a>
+  <a href="/blog" onclick="toggleMenu()">Blog</a>
+  <a href="/faq" onclick="toggleMenu()">FAQ</a>
+  <a href="/about" onclick="toggleMenu()">About</a>
+  <a class="btn btn-outline" href="https://shop.elevationhealth.co" target="_blank" rel="noopener" style="margin-top:22px;justify-content:center" onclick="toggleMenu()">Shop Peptides</a>
+  <a class="btn btn-primary" href="/book" style="margin-top:10px;justify-content:center" onclick="toggleMenu()">Book a free call</a>
+  <a class="mm-phone" href="tel:9832091760" style="text-align:center;margin-top:16px">Or call 983-209-1760</a>
+</div>
+
+<!-- ============ QUIZ MAIN ============ -->
+<main class="quiz-main">
+  <div class="quiz-wrap">
+
+    <!-- Intro (visible on Q1 only) -->
+    <div class="quiz-intro" id="quizIntro">
+      <p class="eyebrow">Find your path</p>
+      <h1>Discover the protocol built around your goals.</h1>
+      <p>Answer a few quick questions about where you are and where you want to be. We&rsquo;ll match you with the GLP-1 or peptide path most likely to deliver the outcomes you&rsquo;re after &mdash; in about 60 seconds. No email required to see your result.</p>
+    </div>
+
+    <!-- Active quiz -->
+    <section class="quiz-active" id="quizActive" aria-live="polite">
+      <div class="progress-row">
+        <span>Question <span class="q-current" id="qCurrent">1</span> of 5</span>
+        <span>60 seconds</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <h2 class="question-title" id="questionTitle">&nbsp;</h2>
+      <div class="options" id="optionsHolder" role="radiogroup" aria-labelledby="questionTitle"></div>
+      <button class="back-link" id="backBtn" hidden onclick="goBack()">&larr; Back</button>
+    </section>
+
+    <!-- Result screen -->
+    <section class="quiz-result" id="quizResult" aria-live="polite">
+      <div class="result-head">
+        <p class="eyebrow result-eyebrow">Your recommendation</p>
+        <h1 id="resultHeadline">Here&rsquo;s the path built around your answers.</h1>
+        <p id="resultSubhead">Based on what you told us, this is the protocol most likely to move you toward your goal &mdash; safely, supported, and without wasted months.</p>
+      </div>
+
+      <div class="result-card">
+        <div class="result-card-inner">
+          <p class="result-protocol" id="resultProtocol">RECOMMENDED PROTOCOL</p>
+          <h2 id="resultName">&mdash;</h2>
+          <p class="lede" id="resultLede">&mdash;</p>
+          <ul class="result-includes" id="resultIncludes"></ul>
+          <div class="result-cta" id="resultCta"></div>
+        </div>
+      </div>
+
+      <div class="result-why">
+        <h3>Why we recommend this for you</h3>
+        <ul id="resultWhy"></ul>
+      </div>
+
+      <div class="result-trust">
+        <span>Physician prescribed</span>
+        <span>Registered dietitian&ndash;led</span>
+        <span>U.S. 503A &amp; 503B pharmacies</span>
+        <span>Discreet delivery</span>
+      </div>
+
+      <div class="retake">
+        <button onclick="retakeQuiz()">Take the quiz again</button>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- ============ COMPLIANCE ============ -->
+<section class="compliance">
+  <div class="wrap">
+    <p>Elevation Health partners with OutfitMD, our medical fulfillment partner, for prescribing and dispensing all medications. All prescriptions are issued by licensed providers through OutfitMD.</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="foot-top">
+    <div class="foot-brand">
+      <img src="images/elevation-health-logo.png" alt="Elevation Health" class="foot-logo">
+      <p>Clinician-led GLP-1 weight loss and peptide therapy. Built by registered dietitians. Delivered nationwide.</p>
+      <a class="foot-phone" href="tel:9832091760">983-209-1760</a>
+    </div>
+    <div class="foot-col">
+      <h4>Explore</h4>
+      <a href="/how-it-works">How It Works</a>
+      <a href="/quiz">GLP-1 Quiz</a>
+      <a href="/offer">90-Day Program</a>
+      <a href="/peptides">Peptides</a>
+      <a href="/resources">Resources</a>
+      <a href="/blog">Blog</a>
+    </div>
+    <div class="foot-col">
+      <h4>Get Started</h4>
+      <a href="/book">Book a free call</a>
+      <a href="https://shop.elevationhealth.co" target="_blank" rel="noopener">Shop Products &#8599;</a>
+      <a href="/faq">FAQ</a>
+      <a href="/about">About</a>
+    </div>
+    <div class="foot-col">
+      <h4>Site</h4>
+      <a href="/sitemap.xml">XML Sitemap</a>
+      <a href="/sitemap.html">HTML Sitemap</a>
+      <a href="/robots.txt">Robots.txt</a>
+      <a href="/blog">Latest Articles</a>
+    </div>
+  </div>
+  <div class="foot-legal">
+    <div class="wrap">
+      <p><strong>Medical Disclaimer:</strong> This website is for informational and educational purposes only and does not constitute medical advice, diagnosis, or treatment. All medications referenced on this site are prescribed by independently licensed physicians following a clinical evaluation. Individual results vary. GLP-1 receptor agonist medications are prescription medications. Elevation Health does not guarantee specific outcomes.</p>
+      <p>Compounded tirzepatide and semaglutide are prescribed by a licensed physician after a clinical evaluation. Results vary. Eligibility is determined by our medical team.</p>
+      <div class="foot-bottom">
+        <span>&copy; 2026 Elevation Health. All rights reserved.</span>
+        <span>U.S. 503A &amp; 503B pharmacies</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://elevationhealth.co/#org","name":"Elevation Health","url":"https://elevationhealth.co/","logo":"https://elevationhealth.co/images/elevation-health-logo.png","telephone":"983-209-1760","areaServed":"US"},{"@type":"MedicalBusiness","@id":"https://elevationhealth.co/#business","name":"Elevation Health","url":"https://elevationhealth.co/","telephone":"983-209-1760","priceRange":"$$","medicalSpecialty":["Endocrine","Nutrition"],"parentOrganization":{"@id":"https://elevationhealth.co/#org"}},{"@type":"WebSite","@id":"https://elevationhealth.co/#website","url":"https://elevationhealth.co/","name":"Elevation Health","publisher":{"@id":"https://elevationhealth.co/#org"}},{"@type":"WebPage","@id":"https://elevationhealth.co/quiz#webpage","url":"https://elevationhealth.co/quiz","name":"GLP-1 Quiz - Find Your Protocol | Elevation Health","description":"60-second interactive quiz that recommends a personalized GLP-1 or peptide protocol based on your goals, history, and timing.","isPartOf":{"@id":"https://elevationhealth.co/#website"},"about":{"@id":"https://elevationhealth.co/#business"}},{"@type":"BreadcrumbList","@id":"https://elevationhealth.co/quiz#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://elevationhealth.co/"},{"@type":"ListItem","position":2,"name":"GLP-1 Quiz","item":"https://elevationhealth.co/quiz"}]}]}</script>
+
+<script>
+/* ---------- mobile menu ---------- */
+function toggleMenu(){document.getElementById('mm').classList.toggle('open')}
+
+/* ============================================================
+   QUIZ ENGINE
+   State: current question index, answers array
+   ============================================================ */
+var QUESTIONS = [
+  {
+    id:'goal',
+    q:"What's your main goal?",
+    options:[
+      {v:'lose_small', t:'Lose 5\u201315 lbs and feel better'},
+      {v:'lose_large', t:'Lose 15+ lbs'},
+      {v:'hormones',   t:'Balance hormones'},
+      {v:'inflammation', t:'Reduce inflammation'},
+      {v:'energy',     t:'Get my energy back'}
+    ]
+  },
+  {
+    id:'programs',
+    q:"Have you tried weight loss programs before?",
+    options:[
+      {v:'many_failed', t:'Yes, many \u2014 nothing has stuck'},
+      {v:'mixed',       t:'A few, with mixed results'},
+      {v:'first',       t:"No, this is my first time"}
+    ]
+  },
+  {
+    id:'glp1',
+    q:"Any prior experience with GLP-1s?",
+    options:[
+      {v:'never',       t:'Never used a GLP-1'},
+      {v:'semaglutide', t:'Used semaglutide before'},
+      {v:'tirzepatide', t:'Used tirzepatide before'},
+      {v:'current',     t:'Currently on a GLP-1'}
+    ]
+  },
+  {
+    id:'support',
+    q:"How much support do you want?",
+    options:[
+      {v:'full',      t:'Full plan \u2014 nutrition, exercise, lifestyle guidance'},
+      {v:'light',     t:'Medication plus light guidance'},
+      {v:'meds_only', t:'Just the medication'}
+    ]
+  },
+  {
+    id:'timing',
+    q:"When do you want to start?",
+    options:[
+      {v:'asap',      t:"ASAP \u2014 I'm ready!"},
+      {v:'30days',    t:'Within the next 30 days'},
+      {v:'exploring', t:'Just exploring'}
+    ]
+  }
+];
+
+var state = { idx:0, answers:new Array(QUESTIONS.length).fill(null) };
+
+/* ---------- render current question ---------- */
+function renderQuestion(){
+  var i = state.idx;
+  var q = QUESTIONS[i];
+
+  // update progress
+  document.getElementById('qCurrent').textContent = (i+1);
+  var pct = ((i)/QUESTIONS.length)*100 + (100/QUESTIONS.length)*0.15;
+  document.getElementById('progressFill').style.width = pct + '%';
+
+  // toggle intro visibility (visible on Q1 only)
+  var intro = document.getElementById('quizIntro');
+  if(i === 0){ intro.classList.remove('hidden'); }
+  else { intro.classList.add('hidden'); }
+
+  // question title
+  var titleEl = document.getElementById('questionTitle');
+  titleEl.textContent = q.q;
+  titleEl.classList.remove('q-anim');
+  void titleEl.offsetWidth; // reflow to restart animation
+  titleEl.classList.add('q-anim');
+
+  // render options
+  var holder = document.getElementById('optionsHolder');
+  holder.innerHTML = '';
+  q.options.forEach(function(opt){
+    var btn = document.createElement('button');
+    btn.className = 'option';
+    btn.setAttribute('role','radio');
+    btn.setAttribute('aria-checked', state.answers[i] === opt.v ? 'true' : 'false');
+    if(state.answers[i] === opt.v) btn.classList.add('selected');
+    btn.innerHTML = '<span>'+opt.t+'</span><span class="arrow" aria-hidden="true">&rarr;</span>';
+    btn.onclick = function(){ selectOption(opt.v, btn); };
+    holder.appendChild(btn);
+  });
+
+  // back button
+  var back = document.getElementById('backBtn');
+  if(i === 0) back.setAttribute('hidden','');
+  else back.removeAttribute('hidden');
+}
+
+/* ---------- handle selection ---------- */
+function selectOption(v, btn){
+  var i = state.idx;
+  state.answers[i] = v;
+  // highlight briefly
+  document.querySelectorAll('.option').forEach(function(o){o.classList.remove('selected')});
+  btn.classList.add('selected');
+  // save
+  try { sessionStorage.setItem('eh_quiz', JSON.stringify(state)); } catch(e){}
+  // advance
+  setTimeout(function(){
+    if(state.idx < QUESTIONS.length - 1){
+      state.idx++;
+      renderQuestion();
+      // scroll to top of quiz for mobile
+      var main = document.querySelector('.quiz-main');
+      if(main && window.innerWidth < 900){
+        window.scrollTo({ top: main.offsetTop - 20, behavior:'smooth' });
+      }
+    } else {
+      showResult();
+    }
+  }, 320);
+}
+
+/* ---------- back ---------- */
+function goBack(){
+  if(state.idx > 0){
+    state.idx--;
+    renderQuestion();
+  }
+}
+
+/* ---------- retake ---------- */
+function retakeQuiz(){
+  state = { idx:0, answers:new Array(QUESTIONS.length).fill(null) };
+  try { sessionStorage.removeItem('eh_quiz'); } catch(e){}
+  document.getElementById('quizResult').classList.remove('show');
+  document.getElementById('quizActive').style.display = '';
+  renderQuestion();
+  window.scrollTo({ top:0, behavior:'smooth' });
+}
+
+/* ============================================================
+   RECOMMENDATION LOGIC
+   answers[0] = goal
+   answers[1] = program history
+   answers[2] = GLP-1 experience
+   answers[3] = support preference
+   answers[4] = timing
+   ============================================================ */
+function getRecommendation(a){
+  var goal = a[0], history = a[1], glp1 = a[2], support = a[3], timing = a[4];
+
+  // === PEPTIDE TRACK ===
+  // Non-weight-loss goals route to peptide consult
+  if(goal === 'hormones' || goal === 'inflammation' || goal === 'energy'){
+    var goalLabel = goal === 'hormones' ? 'hormone balance' : goal === 'inflammation' ? 'reducing inflammation' : 'restoring energy';
+    return {
+      headline: 'Your best next step is a peptide consult.',
+      subhead: 'What you\u2019re after isn\u2019t primarily a weight-loss problem \u2014 it\u2019s a metabolic and hormonal one. Our peptide therapy program is built for exactly this.',
+      protocol: 'PEPTIDE THERAPY CONSULT',
+      name: 'Personalized Peptide Protocol',
+      lede: 'Instead of GLP-1s, we\u2019ll match you with the peptides most researched for '+goalLabel+' \u2014 whether that\u2019s BPC-157, thymosin alpha, sermorelin, kisspeptin, or another protocol. Your consult is free and there\u2019s no obligation to move forward.',
+      includes: [
+        'Free 15-minute consult with a registered dietitian',
+        'Review of your goals, symptoms, and history',
+        'Personalized peptide protocol from licensed U.S. pharmacies',
+        'Ongoing dietitian support and check-ins',
+        'Physician oversight on every prescription'
+      ],
+      why: [
+        'You selected '+(goal === 'hormones' ? 'balancing hormones' : goal === 'inflammation' ? 'reducing inflammation' : 'getting your energy back')+' as your main goal \u2014 that\u2019s where peptide therapy shines, not GLP-1 medication.',
+        'A quick consult lets us match the right peptide to your specific pattern instead of guessing.',
+        (timing === 'exploring' ? 'Since you\u2019re still exploring, a free consult is the lowest-risk way to learn if this is a fit.' : 'You told us you want to start soon \u2014 booking a consult is the fastest path from question to protocol.')
+      ],
+      cta_primary: { text:'Book my free consult', href:'/book', cls:'btn btn-ghost-solid' },
+      cta_secondary: { text:'Explore all peptides', href:'/peptides', cls:'btn btn-ghost' }
+    };
+  }
+
+  // === WEIGHT LOSS TRACK ===
+  var isLargeLoss = goal === 'lose_large';
+  var isSmallLoss = goal === 'lose_small';
+
+  // Choose medication
+  var medPrimary = 'compounded tirzepatide';
+  var medNote = 'the same active ingredient as Zepbound&reg;, and the best-performing GLP-1 in head-to-head trials (avg 22.5% body-weight reduction in SURMOUNT-1).';
+  if(glp1 === 'semaglutide' && isSmallLoss){
+    medPrimary = 'compounded semaglutide or tirzepatide';
+    medNote = 'you\u2019ve responded to semaglutide before, so we can continue that path \u2014 or step you up to tirzepatide for stronger results. Your clinician will help you decide.';
+  } else if(glp1 === 'current'){
+    medNote = 'we\u2019ll work with you on continuing your current protocol or optimizing it. Bring your dose history to your intake.';
+  }
+
+  // Build "why" bullets from actual answers
+  var why = [];
+  // Goal-based
+  if(isLargeLoss) why.push('You\u2019re targeting 15+ lbs of weight loss \u2014 the range where tirzepatide\u2019s trial results (avg 22.5% at 72 weeks) matter most.');
+  if(isSmallLoss) why.push('You\u2019re targeting moderate weight loss \u2014 well within the range GLP-1s consistently deliver in trials.');
+  // History-based
+  if(history === 'many_failed') why.push('You\u2019ve tried many programs that didn\u2019t hold. That\u2019s a support gap, not a discipline problem \u2014 and it\u2019s exactly what the 360 Plan solves.');
+  if(history === 'first') why.push('Since this is your first structured attempt, the built-in dietitian guidance helps you avoid the mistakes most people make in month one.');
+  if(history === 'mixed') why.push('Mixed results usually mean the medication was right but the surrounding plan wasn\u2019t. We fix that half.');
+  // GLP-1 experience
+  if(glp1 === 'never') why.push('First time on a GLP-1 is when side-effect management matters most \u2014 our dietitians walk you through it week by week.');
+  if(glp1 === 'tirzepatide') why.push('You\u2019ve used tirzepatide before, so you know how it feels. We\u2019ll pick up where that left off with a proper support plan.');
+  // Support
+  if(support === 'full') why.push('You want full support \u2014 that\u2019s the entire point of the GLP-1 360 Plan. Nutrition, protein, lifestyle, side-effect help, all included.');
+  if(support === 'meds_only') why.push('Even though you want just the medication, you get access to the dietitian team if you change your mind mid-program \u2014 no upcharge.');
+  // Timing
+  if(timing === 'asap') why.push('You\u2019re ready now. Intake takes minutes, physician review is fast, and shipping is discreet \u2014 you can be underway this week.');
+  if(timing === 'exploring') why.push('If you\u2019re still exploring, book the free 15-minute call before ordering. Zero commitment.');
+  // Trim to max 4 bullets
+  why = why.slice(0, 4);
+
+  var lede = 'You get one vial of '+medPrimary+' (30 mg, an 8\u201312 week supply) plus the full GLP-1 360 nutrition and lifestyle plan. '+ medNote.replace(/&reg;/g,'\u00ae');
+
+  var includes = [
+    '1 vial compounded ' + (glp1 === 'semaglutide' && isSmallLoss ? 'semaglutide or tirzepatide' : 'tirzepatide') + ', 30 mg (8\u201312 week supply)',
+    'Personalized GLP-1 360 nutrition & lifestyle plan',
+    '12-week meal plan, shopping lists & exercise guidance',
+    'Side-effect management from registered dietitians',
+    'Ongoing check-ins and human support'
+  ];
+
+  // Choose primary CTA based on timing
+  var primaryCta, secondaryCta;
+  if(timing === 'exploring'){
+    primaryCta = { text:'Book a free 15-min call', href:'/book', cls:'btn btn-ghost-solid' };
+    secondaryCta = { text:'See the full program \u2014 $899', href:'/offer', cls:'btn btn-ghost' };
+  } else {
+    primaryCta = { text:'Start the 90-Day Program \u2014 $899', href:'/offer', cls:'btn btn-ghost-solid' };
+    secondaryCta = { text:'Book a free 15-min call', href:'/book', cls:'btn btn-ghost' };
+  }
+
+  return {
+    headline: isLargeLoss
+      ? 'The 90-Day Tirzepatide Transformation is built for exactly this.'
+      : 'The 90-Day GLP-1 Transformation is your best next step.',
+    subhead: 'Based on your answers, this is the protocol most likely to move you toward your goal \u2014 safely, with real dietitian support, and without wasted months.',
+    protocol: 'RECOMMENDED PROTOCOL',
+    name: '90-Day GLP-1 Transformation <span class="price">&mdash; $899</span>',
+    lede: lede,
+    includes: includes,
+    why: why,
+    cta_primary: primaryCta,
+    cta_secondary: secondaryCta
+  };
+}
+
+/* ---------- show result ---------- */
+function showResult(){
+  var rec = getRecommendation(state.answers);
+  document.getElementById('resultHeadline').textContent = rec.headline;
+  document.getElementById('resultSubhead').textContent = rec.subhead;
+  document.getElementById('resultProtocol').textContent = rec.protocol;
+  document.getElementById('resultName').innerHTML = rec.name;
+  document.getElementById('resultLede').innerHTML = rec.lede;
+
+  var incs = document.getElementById('resultIncludes');
+  incs.innerHTML = '';
+  rec.includes.forEach(function(it){
+    var li = document.createElement('li');
+    li.innerHTML = '<span class="chk"></span>' + it;
+    incs.appendChild(li);
+  });
+
+  var why = document.getElementById('resultWhy');
+  why.innerHTML = '';
+  rec.why.forEach(function(w){
+    var li = document.createElement('li');
+    li.innerHTML = w;
+    why.appendChild(li);
+  });
+
+  var ctaHolder = document.getElementById('resultCta');
+  ctaHolder.innerHTML = '';
+  var a1 = document.createElement('a');
+  a1.className = rec.cta_primary.cls;
+  a1.href = rec.cta_primary.href;
+  a1.innerHTML = rec.cta_primary.text;
+  ctaHolder.appendChild(a1);
+  var a2 = document.createElement('a');
+  a2.className = rec.cta_secondary.cls;
+  a2.href = rec.cta_secondary.href;
+  a2.innerHTML = rec.cta_secondary.text;
+  ctaHolder.appendChild(a2);
+
+  // hide active quiz, show result
+  document.getElementById('quizActive').style.display = 'none';
+  document.getElementById('quizIntro').classList.add('hidden');
+  document.getElementById('quizResult').classList.add('show');
+  window.scrollTo({ top:0, behavior:'smooth' });
+}
+
+/* ---------- init ---------- */
+(function(){
+  // Restore session if any
+  try{
+    var saved = sessionStorage.getItem('eh_quiz');
+    if(saved){
+      var parsed = JSON.parse(saved);
+      // only restore if all answers filled and user was at end
+      if(parsed && parsed.answers && parsed.answers.every(function(x){return x !== null})){
+        state = parsed;
+        showResult();
+        return;
+      } else if(parsed && typeof parsed.idx === 'number'){
+        state = parsed;
+      }
+    }
+  }catch(e){}
+  renderQuestion();
+})();
+</script>
+
+</body>
+</html>
