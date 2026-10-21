@@ -1,0 +1,5 @@
+# robots.txt for coloradoglp1.com
+User-agent: *
+Allow: /
+
+Sitemap: https://coloradoglp1.com/sitemap.xml

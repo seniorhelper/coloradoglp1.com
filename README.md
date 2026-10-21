@@ -1,2 +1,3 @@
 # coloradoglp1.com
-coloradoglp1.com
+
+coloradoglp1.com is a website asset for sale: a Colorado GLP-1 / weight-loss domain with educational content on FDA-approved semaglutide and tirzepatide, how they work, side effects, cost basics and finding a licensed prescriber, ready for a licensed telehealth clinic, weight-loss practice or pharmacy to add its own brand and phone number. Sister domains whatsglp-1.com, weightlossglp-1.com and glp1denver.com are available individually or as a bundle. Ranking and traffic data (Search Console screenshots) available on request. Contact Eye To Ad Media: call or text 1-800-481-8638 or email info@eyetoad.com. Static site served by GitHub Pages (do not edit CNAME).
